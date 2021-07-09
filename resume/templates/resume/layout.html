@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewreport" content="width=device-width, initial-scale=1.0">
+    <title>
+       html css and bootstrap 4 simple landing page
+    </title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <script src="https://kit.fontawesome.com/2c00a94765.js" crossorigin="anonymous"></script>
+ <body>
+    <div class="container-fluid page">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <i class="fa fa-home"></i> Home
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Download Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                    <div class="image-container"><img src="{% static "images/slika.jpg" %}" class='pic'></div>
+                <div class="des-box">
+                    <div class="describe">Junior Python Devoloper</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid page2">
+        <h1 class="title">Skills</h1>
+        <span class="dividier"></span>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

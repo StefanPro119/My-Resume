@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Raleway', sans-serif;
+    color: #fff
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    /*background-image: url('{% static "images/3.jpg" %}');*/
+    background-image: url(/static/images/4.jpg);
+    background-repeat: no-repeat;
+}
+
+.page .navbar {
+    margin-top: 1%
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black
+}
+.navbar{
+    margin-bottom: 20px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.page .nav {
+    margin-right: 50px;
+}
+
+.page .nav li a{
+    color: #rrr;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.image-container {
+  display: block;
+  margin-left: 620px;
+  margin-top: 110px;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.pic {
+    width: 250px;
+    clip-path: circle();
+}
+
+.des-box {
+    background-color: white;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+.describe {
+  margin-left: 70px;
+  font-size: 22px;
+  font-weight: 700;
+  color: blue
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-color: black;
+}
+
+.title {
+    color: blue;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 700px;
+}
+
+.dividier {
+    width: 1500px;
+    height: 3px;
+    background-color: blue;
+    display: inline-block
+}
