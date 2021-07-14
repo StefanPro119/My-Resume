@@ -14,27 +14,24 @@
 
  <body>
                                              <!--Home Page-->
-    <div class="container-fluid page">
+    <div id='home' class="container-fluid page ">
         <div class="row">
             <div class="col-md-12 bar">
                 <nav class="navbar">
-                    <div class="navbar-brand">
-                        <i class="fa fa-home"></i> Home
-                    </div>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                    <ul class="nav" id="navbar">
+                        <li>
+                            <a class="nav-link active" href="#home"><i class="fa fa-home"></i>Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li>
+                            <a class="nav-link b" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li>
                             <a class="nav-link" href="#">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Download Resume</a>
-                        </li>
-                        <li class="nav-item">
+                        <li>
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
@@ -45,18 +42,51 @@
                     <div class="des-box">
                         <div class="describe">Junior Python Devoloper</div>
                     </div>
+                    <div class="des-box">
+                        <div class="describe">Stefan Orlic</div>
+                    </div>
+                    <div class="des-box">
+                        <div class="describe">Indjija, Serbia</div>
+                    </div>
         </div>
     </div>
+                                             <!--About Page-->
+<h1 class="title" id="about">About</h1>
+<span class="divider"></span>
+<!-- Left side-->
+<div class="section">
+    <div class="containerr">
+        <div class="content-section">
+            <div class="title">
+            </div>
+            <h1 class="About_me">About Me:</h1>
+            <div class="content">
+                <p>ldksaldkasdlsakdlsadksaldkaldkaslaslsakfdslfksclxlcxklclcxckvdlvkxclv7ksdlas7
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp</p>
+            </div>
+        </div>
+        <div class="resume">
+            <img src="{% static "images/resume.gif" %}" >
+            <a href="/static/images/lokal.docx" download><button class="resume_button"><h4>Download Resume</h4></button></a>
+        </div>
+
+    </div>
+</div>
+
 
                                             <!--Skills Page-->
-                                             <h1 class="title">Skills</h1>
-                                             <span class="divider"></span>
+<h1 class="title" id="skills">Skills</h1>
+<span class="divider"></span>
 <!-- Left side-->
 <div class="row g-0">
     <div class="col g-0">
         <div class="leftside">
             <div class="container">
-                <h2 class="title-description">Technical Skills</h2>
+                <h2 class="subtitle">Technical Skills</h2>
                 <div class="skills">
                     <span class="name">Python</span>
                     <div class="percent">
@@ -99,7 +129,7 @@
 <!-- Right side-->
 <div class="col g-0">
     <div class="rightside">
-        <h2 class="title-description">Professional Skills</h2>
+        <h2 class="subtitle">Professional Skills</h2>
         <div class="wrapper">
             <div class="card 1">
                 <div class="circle">
@@ -160,7 +190,55 @@
 
 </script>
 
+<script type="text/javascript">
+    var btnContainer = document.getElementById("navbar");
+    var btns = btnContainer.getElementsByClassName("nav-link");
 
+    for(var i =0; i<btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active");
+            this.className += " active";
+        })
+    }
+</script>
+<script>
+    const nav-link = document.querySelectorAll("nav-link");
+    const navLi = document.querySelectorAll("nav .container ul li");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+          li.classList.add("active");
+        }
+      });
+    });
+
+    // *********************
+    // This Code is for only the floating card in right bottom corner
+    // **********************
+
+    const WebCifarIcon = document.querySelector("#webCifar-icon");
+    const WebCifarEl = document.querySelector("#webCifar");
+    const close = WebCifarEl.querySelector(".close");
+    const youtubeLink = document.querySelector(".youtubeLink");
+
+    WebCifarIcon.addEventListener("click", () => {
+      WebCifarEl.classList.add("active");
+    });
+    close.addEventListener("click", () => {
+      WebCifarEl.classList.remove("active");
+    });
+</script>
     {% block body %}
     {% endblock %}
 </body>
