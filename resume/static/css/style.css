@@ -37,9 +37,6 @@ body {
     margin-right: 100px;
 }
 
-.home{
-    color: black;
-}
 .active{
     color: black
     margin-right: 350px;
@@ -54,12 +51,6 @@ body {
     font-weight: 700;
 }
 
-
-
-
-.navbar li .a{
-    color: black:
-}
 .navbar li .active{
     color: black;
     background-color: blue;
@@ -69,23 +60,8 @@ body {
     color: black;
 }
 
-
-
-
-.nav-item{
-    border-radius: 5%
-}
-.nav-item:hover{
-    background-color: blue;
-}
 .b{
     margin-left: 750px;
-}
-.nav-link:hover{
-    color: white;
-}
-.home:hover{
-    color: blue;
 }
 
 .image-container {
@@ -214,7 +190,6 @@ body {
 /*Skills Page*/
 
 .leftside, .rightside{
-    height: 100vh;
     width: 100%;
     background: black;
 }
@@ -224,7 +199,6 @@ body {
     font-weight: 600;
     padding-bottom: 20px
 }
-
 
 .container
 {
@@ -362,6 +336,71 @@ body {
     color: blue;
 
 }
+
+                                                /*Pojects*/
+.features-grid-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6rem;
+}
+
+.contentt{
+    background: blue
+}
+.imgBx img{
+    width: 600px;
+}
+.containerrr{
+    margin-left: 140px;
+    position: relative;
+    width: 1200px;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+
+.containerrr .cardd{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    border: 4px solid black;
+    border-radius: 5%;
+}
+
+.containerrr .cardd:nth-child(even)
+{
+    flex-direction: column-reverse;
+}
+
+.containerr .cardd .imgBx
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #000;
+}
+.containerr .cardd .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerr .cardd .contentt
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @keyframes animate
 {

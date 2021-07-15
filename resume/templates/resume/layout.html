@@ -29,7 +29,7 @@
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li>
                             <a class="nav-link" href="#">Contact</a>
@@ -51,6 +51,7 @@
         </div>
     </div>
                                              <!--About Page-->
+
 <h1 class="title" id="about">About</h1>
 <span class="divider"></span>
 <!-- Left side-->
@@ -85,8 +86,8 @@
 <div class="row g-0">
     <div class="col g-0">
         <div class="leftside">
+            <h2 class="subtitle">Technical Skills</h2>
             <div class="container">
-                <h2 class="subtitle">Technical Skills</h2>
                 <div class="skills">
                     <span class="name">Python</span>
                     <div class="percent">
@@ -97,9 +98,9 @@
                 <div class="skills">
                     <span class="name">Django/Flask</span>
                     <div class="percent">
-                        <div class="progress" style="width: 90%"></div>
+                        <div class="progress" style="width: 93%"></div>
                     </div>
-                    <span class="value">90%</span>
+                    <span class="value">93%</span>
                 </div>
                 <div class="skills">
                     <span class="name">PostgreSql</span>
@@ -111,9 +112,9 @@
                 <div class="skills">
                     <span class="name">Html/CSS</span>
                     <div class="percent">
-                        <div class="progress" style="width: 95%"></div>
+                        <div class="progress" style="width: 88%"></div>
                     </div>
-                    <span class="value">95%</span>
+                    <span class="value">88%</span>
                 </div>
                 <div class="skills">
                     <span class="name">JavaScript</span>
@@ -163,6 +164,51 @@
     </div>
 </div>
 </div>
+                                            <!--Skills Page-->
+<h1 class="title" id="projects">Projects</h1>
+<span class="divider"></span>
+<div class="containerrr">
+    <div class="cardd">
+        <div class="imgBx">
+            <img src="{% static "images/resume.gif" %}" >
+        </div>
+        <div class="contentt">
+            <div>
+                <h2>Food</h2>
+                <p>dsakl;daskl;dkasl;skfl;dskfsl;fkdsl;ckd
+                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                dslakdasl;dksal;dkasld;askdl;adkasl;d
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="cardd">
+            <div class="imgBx">
+                <img src="{% static "images/resume.gif" %}" >
+            </div>
+        <div class="contentt">
+            <div>
+                <h2>Food</h2>
+                <p>dsakl;daskl;dkasl;skfl;dskfsl;fkdsl;ckdsl;sdksl;7sadsa
+                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                dslakdasl;dksal;dkasld;askdl;adkasl;d      ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
+                dslakdasl;dksal;dkasld;askdl;adkasl;d      k
+                dslakdasl;dksal;dkasld;askdl;adkasl;d
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 
 <script>
     let options = {
@@ -202,43 +248,7 @@
         })
     }
 </script>
-<script>
-    const nav-link = document.querySelectorAll("nav-link");
-    const navLi = document.querySelectorAll("nav .container ul li");
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-          current = section.getAttribute("id");
-        }
-      });
 
-      navLi.forEach((li) => {
-        li.classList.remove("active");
-        if (li.classList.contains(current)) {
-          li.classList.add("active");
-        }
-      });
-    });
-
-    // *********************
-    // This Code is for only the floating card in right bottom corner
-    // **********************
-
-    const WebCifarIcon = document.querySelector("#webCifar-icon");
-    const WebCifarEl = document.querySelector("#webCifar");
-    const close = WebCifarEl.querySelector(".close");
-    const youtubeLink = document.querySelector(".youtubeLink");
-
-    WebCifarIcon.addEventListener("click", () => {
-      WebCifarEl.classList.add("active");
-    });
-    close.addEventListener("click", () => {
-      WebCifarEl.classList.remove("active");
-    });
-</script>
     {% block body %}
     {% endblock %}
 </body>
