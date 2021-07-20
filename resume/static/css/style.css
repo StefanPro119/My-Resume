@@ -350,6 +350,7 @@ body {
 }
 .imgBx img{
     width: 600px;
+    height: 300px
 }
 .containerrr{
     margin-left: 140px;
@@ -400,6 +401,140 @@ body {
     align-items: center;
 }
 
+.message{
+    background-color: yellow;
+    color: red
+}
+
+                                       /*Contact Page*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding:  50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px
+}
+.cont .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column
+}
+.cont .contactinfo .boox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.cont .contactinfo .boox .icon{
+    min-width: 60px;
+    height: 60px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.cont .contactinfo .boox .teext{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: blue;
+    flex-direction: column;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cont .contactinfo .boox .teext h3{
+    font-weight: 500;
+    color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: cyan;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 300
+}
+#button{
+    border: 5px solid blue;
+    background-color: blue
+}
+#button:hover{
+    background-color: cyan;
+    border: 5px solid blue;
+}
+
+.social{
+    width: 100%;
+    height: 40px;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#icon_l{
+    font-size: 200%;
+    margin-right: 20px;
+    border-radius: 100%;
+    color: red
+}
+#icon_l:hover{
+    font-size: 200%;
+    margin-right: 20px;
+    color: blue
+}
+#icon_g{
+    font-size: 200%;
+    margin-right: 20px;
+    border-radius: 100%;
+    color: red
+}
+#icon_g:hover{
+    font-size: 200%;
+    margin-right: 20px;
+    color: blue
+}
+#icon_f{
+    font-size: 200%;
+    margin-right: 20px;
+    border-radius: 100%;
+    color: red
+}
+#icon_f:hover{
+    font-size: 200%;
+    margin-right: 20px;
+    color: blue
+}
+#icon_i{
+    font-size: 200%;
+    margin-right: 20px;
+    border-radius: 100%;
+    color: red
+}
+#icon_i:hover{
+    font-size: 200%;
+    margin-right: 20px;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+}
 
 
 @keyframes animate

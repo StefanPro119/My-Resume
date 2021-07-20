@@ -128,4 +128,14 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 
 ]
+
+# email setting
+
+db_password = os.environ.get('EMAIL_PASS')
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'orlicstefan1990@gmail.com'
+EMAIL_HOST_PASSWORD = db_password
+EMAIL_USE_TLS = True
+
 # STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')

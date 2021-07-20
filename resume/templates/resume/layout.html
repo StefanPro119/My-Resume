@@ -14,6 +14,12 @@
 
  <body>
                                              <!--Home Page-->
+{% if name %}
+   <center class="message">
+        <h2>Thank you {{ name.capitalize }}</h2>
+        <p>We received your email and will respond shortly...</p>
+   </center>
+{% else %}
     <div id='home' class="container-fluid page ">
         <div class="row">
             <div class="col-md-12 bar">
@@ -32,7 +38,7 @@
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,6 +56,7 @@
                     </div>
         </div>
     </div>
+ {% endif %}
                                              <!--About Page-->
 
 <h1 class="title" id="about">About</h1>
@@ -170,7 +177,7 @@
 <div class="containerrr">
     <div class="cardd">
         <div class="imgBx">
-            <img src="{% static "images/resume.gif" %}" >
+            <img src="{% static "images/project2.gif" %}" >
         </div>
         <div class="contentt">
             <div>
@@ -188,7 +195,7 @@
     </div>
         <div class="cardd">
             <div class="imgBx">
-                <img src="{% static "images/resume.gif" %}" >
+                <img src="{% static "images/12.jpg" %}" >
             </div>
         <div class="contentt">
             <div>
@@ -204,9 +211,65 @@
     </div>
 </div>
 
+                                            <!--Contant Page-->
+<h1 class="title" id="contact">Contact</h1>
+<span class="divider"></span>
 
-
-
+<section class="contact">
+    <div class="contenttt">
+    </div>
+    <div class="cont">
+        <div class="contactinfo">
+            <div class="boox">
+                <div class="icon"><i class="fas fa-map-pin"></i></div>
+                    <div class="teext">
+                        <h3>Address</h3>
+                        <p>1. Novembar 93, Indjija, Serbia</p>
+                    </div>
+            </div>
+            <div class="boox">
+                <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="teext">
+                        <h3>Phone</h3>
+                        <p>+38164/31-45-177</p>
+                    </div>
+            </div>
+            <div class="boox">
+                <div class="icon"><i class="far fa-envelope-open"></i></div>
+                    <div class="teext">
+                        <h3>Email</h3>
+                        <p>orlicstefan1990@gmail.com</p>
+                    </div>
+            </div>
+        </div>
+        <div class="contactForm">
+                <h2>Send Message</h2>
+                <form action="{% url 'contact' %}" method='POST'>
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" name="name" class="form-control mb-30" placeholder="Your Name">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="email" class="form-control mb-30" placeholder="Your Email">
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn" id="button">Send</button>
+                    </div>
+                </div>
+                </form>
+        </div>
+    </div>
+    <div class="social">
+        <div><a href="https://www.linkedin.com/in/stefan-orlic-a13457168/" target="_blank"><i class="fab fa-linkedin" id="icon_l"></i></a></div>
+        <div><a href="https://github.com/StefanPro119" target="_blank"><i class="fab fa-github" id="icon_g"></i></a></div>
+        <div><a href="https://www.facebook.com/stefan.orlic.7/" target="_blank"><i class="fab fa-facebook" id="icon_f"></i></a></div>
+        <div><a href="https://www.instagram.com/_zeka_90/" target="_blank"><i class="fab fa-instagram-square" id="icon_i"></i></a></div>
+    </div>
+</section>
 
 
 
