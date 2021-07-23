@@ -41,9 +41,6 @@ body {
     color: black
     margin-right: 350px;
 }
-.page .nav {
-    margin-right: 50px;
-}
 
 .page .nav li a{
     color: #rrr;
@@ -422,7 +419,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px
+    margin-top: 30px;
+
 }
 .cont .contactinfo{
     width: 50%;
@@ -470,7 +468,8 @@ body {
 }
 #button{
     border: 5px solid blue;
-    background-color: blue
+    background-color: blue;
+    height: 50px;
 }
 #button:hover{
     background-color: cyan;
@@ -484,7 +483,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 200px
 }
 
 #icon_l{
@@ -507,7 +506,7 @@ body {
 #icon_g:hover{
     font-size: 200%;
     margin-right: 20px;
-    color: blue
+    color: black
 }
 #icon_f{
     font-size: 200%;
@@ -544,3 +543,318 @@ body {
         width: 0;
     }
 }
+
+
+@media screen and (max-width: 1480px) {
+    .page {
+        background-size: 100%;
+    }
+
+    .navbar{
+        width: 80%;
+        height: 60px;
+    }
+
+    .b{
+        margin-left: 10px
+    }
+
+    .navbar ul{
+        margin-left: 15%;
+    }
+
+    .image-container {
+      margin-left: 40%;
+    }
+
+    .des-box {
+        margin-left: 40%;
+    }
+
+    .title {
+        margin-left: 50%;
+
+    }
+    .divider {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .About_me {
+        font-weight: 300;
+        padding-left: 30%;
+        padding-top: 10px;
+    }
+    .section{
+        display: flex;
+    }
+    .content p{
+        font-weight: 200;
+        padding-left: 30%;
+    }
+
+    .resume{
+        float: left;
+        margin-left: 30%;
+        width: 700px;
+    }
+
+    .resume img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .resume_button{
+        width: 400px;
+        height: 50px;
+    }
+
+
+    .wrapper {
+        display: flex;
+        width: 798px;
+        margin-left: 1%;
+    }
+
+    .wrapper .card{
+        width: 34%;
+        height: 250px;
+        margin-left: 70px;
+        margin-right: 50px;
+
+    }
+
+    .containerrr {
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contentt{
+        width: 600px;
+    }
+
+    .imgBx img{
+        width: 600px;
+    }
+
+    .containerrr .cardd:nth-child(even)
+    {
+        flex-direction: column;
+    }
+
+}
+
+/*tablets*/
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+
+    .page .nav li a{
+        color: #rrr;
+        font-size: 50%;
+        font-weight: 700;
+    }
+
+
+    .b{
+        margin-left: 1px;
+    }
+
+    .image-container {
+      margin-left: 30%;
+    }
+
+    .pic {
+        width: 70%;
+    }
+
+    .des-box {
+        margin-left: 34%;
+        width: 30%;
+    }
+
+    .describe {
+        margin-left: 10px;
+        font-size: 50%;
+
+    }
+
+    .title {
+        margin-left: 45%;
+        font-size: 20px;
+    }
+
+    .containerr{
+        margin-left: -50px;
+        width: 200px;
+    }
+
+    .content-section{
+        margin-left: 50px;
+        width: 200px;
+    }
+    .About_me {
+        font-weight: 300;
+        font-size: 8px;
+        margin-left: 80%;
+        padding-top: 1px;
+        width: 200px;
+    }
+    .content p{
+        margin-left: 35%;
+        font-weight: 100;
+        padding-left: 10%;
+        font-size: 8px;
+    }
+
+    .resume{
+        float: left;
+        margin-left: 50%;
+        width: 300px;
+    }
+
+    .resume img{
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+    }
+
+    .resume_button{
+        width: 200px;
+        height: 40px;
+        margin-left: 100px;
+    }
+    .resume_button h4{
+        font-size: 8px;
+    }
+
+
+    .subtitle{
+        font-size: 10px;
+    }
+    .skills{
+        width: 300px;
+        height: 60px;
+        font-size: 10px;
+        margin-left: 10%
+    }
+
+    .container .skills .percent {
+        width: 250px;
+        height: 10px;
+        margin: -10 20px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 6%
+    }
+
+    .wrapper .card{
+        width: 38%;
+        height: 200px;
+        margin-left: 30px;
+        margin-right: 15px;
+        background: linear-gradient(#616161 0%, #333 10%, #222);
+
+    }
+
+    .card .circle .boxx span{
+        font-size: 20px;
+    }
+
+    .card .text{
+        font-size: 10px;
+    }
+    .features-grid-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6rem;
+}
+
+    .contentt{
+        background: blue;
+        width: 300px;
+    }
+    .imgBx img{
+        width: 300px;
+        height: 150px
+    }
+
+    .containerrr .cardd{
+        margin-left:  15%;
+    }
+
+    .contentt h2{
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 40%;
+    }
+    .contentt p{
+        font-size: 8px;
+    }
+
+
+    .contenttt{
+        margin-left: -20px;
+    }
+    .cont .contactinfo .boox .icon{
+        min-width: 40px;
+        height: 40px;
+    }
+    .cont .contactinfo .boox .teext{
+        margin-left: 20px;
+        font-size: 8px;
+    }
+    .cont .contactinfo .boox .teext h3{
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .contactForm{
+        width: 50%;
+        padding: 25px;
+        margin-left: 30px;
+    }
+    .row .f {
+        font-size: 8px;
+        width: 150px;
+    }
+    .row .c {
+        font-size: 8px;
+        width: 150px;
+        height: 100px
+    }
+    .contactForm h2{
+        font-size: 10px;
+        font-weight: 400
+    }
+    #button{
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+
+}
+/*mobile phones*/

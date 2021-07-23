@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
- <body>
+<body>
                                              <!--Home Page-->
 {% if name %}
    <center class="message">
@@ -81,10 +81,8 @@
             <img src="{% static "images/resume.gif" %}" >
             <a href="/static/images/lokal.docx" download><button class="resume_button"><h4>Download Resume</h4></button></a>
         </div>
-
     </div>
 </div>
-
 
                                             <!--Skills Page-->
 <h1 class="title" id="skills">Skills</h1>
@@ -171,7 +169,7 @@
     </div>
 </div>
 </div>
-                                            <!--Skills Page-->
+                                            <!--Project Page-->
 <h1 class="title" id="projects">Projects</h1>
 <span class="divider"></span>
 <div class="containerrr">
@@ -200,10 +198,15 @@
         <div class="contentt">
             <div>
                 <h2>Food</h2>
-                <p>dsakl;daskl;dkasl;skfl;dskfsl;fkdsl;ckdsl;sdksl;7sadsa
+                <p>dsakl;daskl;dkasl;skfl;dskfsl;fkdsl;ckdsl
+                    ;sdksl;7sadsa
                 ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                dslakdasl;dksal;dkasld;askdl;adkasl;d      ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                dslakdasl;dksal;dkasld;askdl;adkasl;d      k
+                dslakdasl;dksal;dkasld;askdl;adkas
+                    l;dksdl
+                    f;s
+                    akfl;sdkfsld;fksdl
+                    ;fksdl;sdkl;fds7
+                dslakdasl;dksal;dkasld;askdl;adkasl;dk
                 dslakdasl;dksal;dkasld;askdl;adkasl;d
                 </p>
             </div>
@@ -217,7 +220,6 @@
 
 <section class="contact">
     <div class="contenttt">
-    </div>
     <div class="cont">
         <div class="contactinfo">
             <div class="boox">
@@ -247,17 +249,17 @@
                 <form action="{% url 'contact' %}" method='POST'>
                 {% csrf_token %}
                 <div class="row">
-                    <div class="col-lg-6">
-                        <input type="text" name="name" class="form-control mb-30" placeholder="Your Name">
+                    <div class="col-lg-6 ">
+                        <input type="text" name="name" class="form-control mb-30 f" placeholder="Your Name">
                     </div>
                     <div class="col-lg-6">
-                        <input type="text" name="email" class="form-control mb-30" placeholder="Your Email">
+                        <input type="text" name="email" class="form-control mb-30 f" placeholder="Your Email">
                     </div>
                     <div class="col-12">
-                        <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                        <textarea name="message" class="form-control mb-30 c" placeholder="Your Message"></textarea>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn" id="button">Send</button>
+                        <button type="submit" class="btn" id="button"><p>Send</p></button>
                     </div>
                 </div>
                 </form>
