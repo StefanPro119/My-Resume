@@ -858,3 +858,259 @@ body {
 
 }
 /*mobile phones*/
+
+@media screen and (max-width: 470px){
+
+    .navbar{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        height: 60px;
+        width: 300px;
+        text-align: center
+    }
+    .nav {
+        width: 700px;
+        margin-left: 40px;
+        height: 50px;
+    }
+    .active{
+        height: 40px;
+    }
+    .page .nav li{
+        width: 58px;
+        margin-left: -15px;
+
+    }
+    .page .nav li a{
+        color: #rrr;
+        font-size: 40%;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+
+    .b{
+        margin-left: 1px;
+    }
+
+    .image-container {
+      margin-left: 30%;
+    }
+
+    .pic {
+        width: 50%;
+    }
+
+    .des-box {
+        margin-left: 30%;
+        width: 30%;
+    }
+
+    .describe {
+        margin-left: 10px;
+        font-size: 50%;
+
+    }
+    .title{
+        margin-left: 40%;
+    }
+    .About_me {
+        margin-left: 48%;
+    }
+    .content p{
+        margin-left: 8%;
+    }
+
+    .resume{
+        margin-left: 20%;
+    }
+
+
+
+    .subtitle{
+        margin-left: -10%;
+    }
+    .skills{
+        margin-left: 0%
+    }
+
+    .wrapper {
+        margin-left: 0%
+    }
+
+    .wrapper .card{
+        width: 38%;
+        height: 200px;
+        margin-left: 120px;
+        margin-right: 40px;
+        background: linear-gradient(#616161 0%, #333 10%, #222);
+
+    }
+
+    .card .circle .boxx span{
+        font-size: 20px;
+    }
+
+    .card .text{
+        font-size: 10px;
+    }
+    .features-grid-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6rem;
+}
+
+    .contentt{
+        background: blue;
+        width: 300px;
+    }
+    .imgBx img{
+        width: 300px;
+        height: 150px
+    }
+
+    .containerrr .cardd{
+        margin-left:  15%;
+    }
+
+    .contentt h2{
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 40%;
+    }
+    .contentt p{
+        font-size: 8px;
+    }
+
+
+    .contenttt{
+        margin-left: -20px;
+    }
+    .cont .contactinfo .boox .icon{
+        min-width: 40px;
+        height: 40px;
+    }
+    .cont .contactinfo .boox .teext{
+        margin-left: 20px;
+        font-size: 8px;
+    }
+    .cont .contactinfo .boox .teext h3{
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .contactForm{
+        width: 50%;
+        padding: 25px;
+        margin-left: 30px;
+    }
+    .row .f {
+        font-size: 8px;
+        width: 150px;
+    }
+    .row .c {
+        font-size: 8px;
+        width: 150px;
+        height: 100px
+    }
+    .contactForm h2{
+        font-size: 10px;
+        font-weight: 400
+    }
+    #button{
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+
+@media screen and (max-width: 320px){
+
+    .navbar{
+        margin-bottom: 10px;
+        margin-left: 0px;
+        height: 60px;
+        width: 270px;
+        text-align: center
+    }
+    .nav {
+        width: 700px;
+        margin-left: 10px;
+        height: 50px;
+    }
+    .active{
+        height: 40px;
+    }
+
+    .title{
+        margin-left: 40%;
+    }
+    .About_me {
+        margin-left: 28%;
+
+    }
+    .content p{
+        margin-left: -5%;
+        font-size: 7px;
+    }
+
+    .resume{
+        margin-left: -10%;
+    }
+
+
+
+    .subtitle{
+        margin-left: -10%;
+    }
+    .skills{
+        margin-left: -13%
+    }
+
+    .wrapper {
+        margin-left: -15%
+    }
+
+
+
+    .contentt{
+        background: blue;
+        width: 200px;
+    }
+    .imgBx img{
+        width: 200px;
+        height: 150px
+    }
+
+    .containerrr .cardd{
+        margin-left:  5%;
+    }
+
+
+    .contenttt{
+        margin-left: 10px;
+    }
+
+    .cont .contactinfo .boox .teext{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+
+    .contactForm{
+        width: 45%;
+        height: 250px;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    .row .f {
+        font-size: 8px;
+        width: 110px;
+    }
+    .row .c {
+        font-size: 8px;
+        width: 110px;
+        height: 100px
+    }
+
+}

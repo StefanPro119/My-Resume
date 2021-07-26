@@ -129,6 +129,7 @@ STATICFILES_DIRS = [
 
 ]
 
+
 # email setting
 
 db_password = os.environ.get('EMAIL_PASS')
