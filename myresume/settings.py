@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+import django_heroku
+import dj_database_url
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'myresume.urls'
@@ -129,6 +133,8 @@ STATICFILES_DIRS = [
 
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # email setting
 
@@ -140,3 +146,5 @@ EMAIL_HOST_PASSWORD = db_password
 EMAIL_USE_TLS = True
 
 # STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
+
+django_heroku.settings(locals())
