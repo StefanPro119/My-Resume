@@ -199,7 +199,7 @@
                 When clicking on the Create button, client has an option to create auction. The page Create your product appears and the client should introduce Title, Subtitle, Category, Starting price and Image.
                 That way, the client is the seller of the item.</span>
                 </p>
-                <button class="read-more-btn">Read More</button>
+                <button class="read-more-btn">Show More...</button>
             </div>
         </div>
     </div>
@@ -261,7 +261,7 @@
                 <form action="{% url 'contact' %}" method='POST'>
                 {% csrf_token %}
                 <div class="row">
-                    <div class="col-lg-6 ">
+                    <div class="col-lg-6">
                         <input type="text" name="name" class="form-control mb-30 f" placeholder="Your Name">
                     </div>
                     <div class="col-lg-6">
@@ -332,10 +332,10 @@
 
     readMoreBtn.addEventListener('click',(e)=>{
         text1.classList.toggle('show-more');
-        if(readMoreBtn.innerText === 'Read More'){
-            readMoreBtn.innerText = 'Read Less';
+        if(readMoreBtn.innerText === 'Show More...'){
+            readMoreBtn.innerText = 'Show Less';
         }else{
-            readMoreBtn.innerText = 'Read More';
+            readMoreBtn.innerText = 'Show More...';
         }
     })
 

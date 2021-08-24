@@ -591,7 +591,8 @@ body {
     }
 
     .des-box {
-        margin-left: 38%;
+        margin-left: 28%;
+        width: 50%;
     }
 
     .title {
@@ -623,7 +624,6 @@ body {
         width: 200px;
     }
 
-
     .content p{
         font-weight: 200;
         padding-left: 30%;
@@ -646,11 +646,16 @@ body {
         margin-bottom: 120px;
     }
 
-
+    .subtitle{
+        margin-left: 5%;
+    }
+    .container{
+        margin-left: 15%
+    }
     .wrapper {
         display: flex;
         width: 798px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .wrapper .card{
@@ -670,39 +675,34 @@ body {
 
 
     .contentt{
-        width: 600px;
-    }
-
-    .imgBx img{
-        width: 600px;
-    }
-
-
-    .contentt{
         background: blue;
-        width: 500px;
+        width: 700px;
     }
     .imgBx img{
-        width: 500px;
-        height: 300px
+        width: 700px;
+        height: 400px
     }
 
     .containerrr .cardd{
-        margin-left:  15%;
+        margin-left:  5%;
     }
 
     .contentt h2{
-        font-size: 20px;
+        font-size: 40px;
         font-weight: 600;
-        margin-left: 40%;
+        margin-left: 33%;
+
     }
     .contentt p{
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .read-more-btn{
+        font-size: 20px;
     }
 
-
     .contenttt{
-        margin-left: -20px;
+        margin-left: 20%;
+        width: 120%
     }
     .cont .contactinfo .boox .icon{
         min-width: 60px;
@@ -710,21 +710,58 @@ body {
     }
     .cont .contactinfo .boox .teext{
         margin-left: 20px;
-        font-size: 15px;
+        font-size: 25px;
     }
     .cont .contactinfo .boox .teext h3{
         font-weight: 500;
-        font-size: 15px;
+        font-size: 25px;
     }
     .contactForm{
-        width: 50%;
-        padding: 25px;
+        width: 70%;
+        height: 60%;
         margin-left: 30px;
+
     }
-
-
-
-
+    .contactForm h2{
+        font-size: 35px;
+    }
+    .row .f {
+        font-size: 25px;
+    }
+    .row .c {
+        font-size: 25px;
+    }
+    .btn{
+        font-size: 25px;
+        padding-bottom: 40px;
+    }
+    .social{
+        height: 100px;
+    }
+    #icon_l{
+        font-size: 500%;
+    }
+    #icon_l:hover{
+        font-size: 500%;
+    }
+    #icon_g{
+        font-size: 500%;
+    }
+    #icon_g:hover{
+        font-size: 500%;
+    }
+    #icon_f{
+        font-size: 500%;
+    }
+    #icon_f:hover{
+        font-size: 500%;
+    }
+    #icon_i{
+        font-size: 500%;
+    }
+    #icon_i:hover{
+        font-size: 500%;;
+    }
 
     .containerrr .cardd:nth-child(even)
     {
