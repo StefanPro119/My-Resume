@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <script src="{% static "js/nav.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/nav.js" %}" type="text/javascript"></script>
 
 <body>
                                              <!--Home Page-->
@@ -70,12 +71,12 @@
             </div>
             <h1 class="About_me">About Me:</h1>
             <div class="content">
-                <p>ldksaldkasdlsakdlsadksaldkaldkaslaslsakfdslfksclxlcxklclcxckvdlvkxclv7ksdlas7
-                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
-                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
-                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
-                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp
-                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkaspdokasdopakdoadoasp</p>
+                <p>ldksaldkasdlsakdlsadksaldkaldkaslaslsakfdslfksclxlc
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;l
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldka
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkas
+                dlsakdalsdksaldksal;ksa;ldksa;dlks;lsdk;sldkasldkas;ldkasp</p>
             </div>
         </div>
         <div class="resume">
@@ -135,7 +136,7 @@
 
 <!-- Right side-->
 <div class="col g-0">
-    <div class="rightside"  \
+    <div class="rightside">
         <h2 class="subtitle">Professional Skills</h2>
         <div class="wrapper">
             <div class="card 1">
@@ -181,16 +182,24 @@
         <div class="contentt">
             <div>
                 <h2>E-commerce</h2>
-                <p>
-
-                dsakl;daskl;dkasl;skfl;dskfsl;fkdsl;ckd
-                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                ksdlf;sakfl;sdkfsld;fksdl;fksdl;sdkl;fds7
-                dslakdasl;dksal;dkasld;askdl;adkasl;d
+                <p class="text1">
+                The project created is a web site for e-commerce.
+                Clients can register with their username and password in order to be able to take part in bidding. <br> <br>
+                When the profile is created, the client can see which listings are active (Active listings menu), that is, the articles that has not been sold yet.
+                Besides, other menus on the client’s homepage are Log Out, Create, Category and Watchlist menu. <br> <br> <span class="moreText">
+                On the Active listings page, there are listings that are available to be sold. Every item has More info button; when clicking it, detailed info about the product appears.
+                It includes a product description, starting price, current bid (if already bided), who the product is created by and date and time of auction creation.
+                Also, there is an option to add the item to the client’s Watchlist, or to remove it.
+                A client can simply do this by clicking on the Add to/Remove from Watchlist button.
+                Consequently, it will be available to be seen in or removed from the Watchlist menu. <br> <br>
+                On the product page, client can make a bid by introducing the price in the Bid value blank space.
+                By clicking on the Make a bid button, the info on the page is updated and it shows the current bid that the client has introduced; the notification Your bid is actual appears.
+                There is also an option to leave a comment about the product bellow the product image. <br> <br>
+                Afterwards, if the price introduced suits the seller, the auction can be closed, and in the clients profile appears the notification It has been sold to you. <br> <br>
+                When clicking on the Create button, client has an option to create auction. The page Create your product appears and the client should introduce Title, Subtitle, Category, Starting price and Image.
+                That way, the client is the seller of the item.</span>
                 </p>
+                <button class="read-more-btn">Read More</button>
             </div>
         </div>
     </div>
@@ -316,6 +325,22 @@
         })
     }
 </script>
+
+<script>
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const text1 = document.querySelector('.text1');
+
+    readMoreBtn.addEventListener('click',(e)=>{
+        text1.classList.toggle('show-more');
+        if(readMoreBtn.innerText === 'Read More'){
+            readMoreBtn.innerText = 'Read Less';
+        }else{
+            readMoreBtn.innerText = 'Read More';
+        }
+    })
+
+</script>
+
 
     {% block body %}
     {% endblock %}

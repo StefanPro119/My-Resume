@@ -402,7 +402,23 @@ body {
     background-color: yellow;
     color: red
 }
+.moreText{
+    display: none;
+}
+.read-more-btn{
+    padding: 10px 40px;
+    background-color: white;
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
 
+}
+.text1.show-more .moreText{
+    display: inline;
+}
                                        /*Contact Page*/
 .contact{
     position: relative;
@@ -660,13 +676,15 @@ body {
 
     .navbar{
         margin-bottom: 20px;
-        margin-left: 40px;
+        margin-left: 10px;
+        padding-left: 1px;
+        width: 550px;
     }
 
 
     .page .nav li a{
         color: #rrr;
-        font-size: 50%;
+        font-size: 90%;
         font-weight: 700;
     }
 
@@ -680,23 +698,23 @@ body {
     }
 
     .pic {
-        width: 70%;
+        width: 100%;
     }
 
     .des-box {
-        margin-left: 34%;
-        width: 30%;
+        margin-left: 30%;
+        width: 50%;
     }
 
     .describe {
         margin-left: 10px;
-        font-size: 50%;
+        font-size: 100%;
 
     }
 
     .title {
         margin-left: 45%;
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .containerr{
@@ -710,16 +728,16 @@ body {
     }
     .About_me {
         font-weight: 300;
-        font-size: 8px;
+        font-size: 28px;
         margin-left: 80%;
         padding-top: 1px;
         width: 200px;
     }
     .content p{
-        margin-left: 35%;
+        margin-left: 75%;
         font-weight: 100;
         padding-left: 10%;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .resume{
@@ -729,29 +747,29 @@ body {
     }
 
     .resume img{
-        width: 200px;
-        height: 200px;
-        margin-left: 100px;
+        width: 350px;
+        height: 300px;
+        margin-left: 50px;
     }
 
     .resume_button{
-        width: 200px;
+        width: 350px;
         height: 40px;
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .resume_button h4{
-        font-size: 8px;
+        font-size: 15px;
     }
 
 
     .subtitle{
-        font-size: 10px;
+        font-size: 25px;
     }
     .skills{
         width: 300px;
         height: 60px;
         font-size: 10px;
-        margin-left: 10%
+        margin-left: 20%
     }
 
     .container .skills .percent {
@@ -763,27 +781,28 @@ body {
     .wrapper {
         display: flex;
         flex-wrap: wrap;
-        width: 400px;
+        width: 600px;
         align-items: center;
         justify-content: space-between;
         margin-left: 6%
     }
 
     .wrapper .card{
-        width: 38%;
+        width: 50%;
         height: 200px;
-        margin-left: 30px;
-        margin-right: 15px;
+        margin-left: 120px;
+        margin-right: 35px;
         background: linear-gradient(#616161 0%, #333 10%, #222);
 
     }
 
     .card .circle .boxx span{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .card .text{
-        font-size: 10px;
+        font-size: 16px;
+        font-weight: 100;
     }
     .features-grid-container{
     width: 80%;
@@ -794,11 +813,11 @@ body {
 
     .contentt{
         background: blue;
-        width: 300px;
+        width: 500px;
     }
     .imgBx img{
-        width: 300px;
-        height: 150px
+        width: 500px;
+        height: 300px
     }
 
     .containerrr .cardd{
@@ -806,12 +825,12 @@ body {
     }
 
     .contentt h2{
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 600;
         margin-left: 40%;
     }
     .contentt p{
-        font-size: 8px;
+        font-size: 15px;
     }
 
 
@@ -819,73 +838,76 @@ body {
         margin-left: -20px;
     }
     .cont .contactinfo .boox .icon{
-        min-width: 40px;
-        height: 40px;
+        min-width: 60px;
+        height: 60px;
     }
     .cont .contactinfo .boox .teext{
         margin-left: 20px;
-        font-size: 8px;
+        font-size: 15px;
     }
     .cont .contactinfo .boox .teext h3{
         font-weight: 500;
-        font-size: 10px;
+        font-size: 15px;
     }
     .contactForm{
         width: 50%;
         padding: 25px;
         margin-left: 30px;
     }
+
     .row .f {
-        font-size: 8px;
-        width: 150px;
+        font-size: 15px;
+        width: 250px;
     }
     .row .c {
-        font-size: 8px;
-        width: 150px;
+        font-size: 15px;
+        width: 250px;
         height: 100px
     }
     .contactForm h2{
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 400
     }
     #button{
-        width: 60px;
-        height: 30px;
-        font-size: 12px;
-        height: 40px;
+        width: 80px;
+        height: 45px;
+        font-size: 15px;
     }
 
 
 }
 /*mobile phones*/
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 520px){
 
     .navbar{
         margin-bottom: 20px;
         margin-left: 20px;
-        height: 60px;
-        width: 300px;
+        height: 80px;
+        width: 420px;
         text-align: center
     }
     .nav {
-        width: 700px;
-        margin-left: 40px;
+        width: 750px;
+        margin-left: 150px;
         height: 50px;
+        font-size: 32px;
     }
     .active{
-        height: 40px;
+        height: 50px;
+        width: 70px;
+
     }
     .page .nav li{
-        width: 58px;
-        margin-left: -15px;
+        width: 71px;
+        margin-left: -2px;
 
     }
     .page .nav li a{
         color: #rrr;
         font-size: 40%;
         font-weight: 700;
-        margin-left: 10px;
+        margin-left: -20px;
     }
 
 
@@ -895,40 +917,59 @@ body {
 
     .image-container {
       margin-left: 30%;
+      margin-top: 200px;
     }
 
     .pic {
-        width: 50%;
+        width: 100%;
     }
 
     .des-box {
         margin-left: 30%;
-        width: 30%;
+        width: 50%;
     }
 
     .describe {
         margin-left: 10px;
-        font-size: 50%;
+        font-size: 100%;
 
     }
     .title{
         margin-left: 40%;
+        font-size: 200%;
     }
     .About_me {
         margin-left: 48%;
+        font-size: 150%;
     }
+
+
     .content p{
         margin-left: 8%;
-    }
+        font-size: 80%;
 
-    .resume{
+    }
+    .resume {
+        margin-left: 10%;
+        width: 500px;
+    }
+    .resume img{
         margin-left: 20%;
+        width: 300px;
+        height: 300px;
     }
-
-
+    .resume_button{
+        width: 300px;
+        height: 50px;
+        font-size: 80%;
+    }
+    .resume_button h4{
+        font-size: 120%;
+    }
 
     .subtitle{
         margin-left: -10%;
+        font-size: 100%;
     }
     .skills{
         margin-left: 0%
@@ -939,20 +980,21 @@ body {
     }
 
     .wrapper .card{
-        width: 38%;
+        width: 73%;
         height: 200px;
-        margin-left: 120px;
+        margin-left: 50px;
         margin-right: 40px;
         background: linear-gradient(#616161 0%, #333 10%, #222);
 
     }
 
     .card .circle .boxx span{
-        font-size: 20px;
+        font-size: 30px;
+
     }
 
     .card .text{
-        font-size: 10px;
+        font-size: 15px;
     }
     .features-grid-container{
     width: 80%;
