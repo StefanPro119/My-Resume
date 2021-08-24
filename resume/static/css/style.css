@@ -580,15 +580,22 @@ body {
     }
 
     .image-container {
-      margin-left: 40%;
+      margin-left: 35%;
+    }
+    .pic {
+        width: 70%;
+    }
+    .describe {
+        margin-left: 10px;
+        font-size: 30px;
     }
 
     .des-box {
-        margin-left: 40%;
+        margin-left: 38%;
     }
 
     .title {
-        margin-left: 50%;
+        margin-left: 45%;
 
     }
     .divider {
@@ -601,16 +608,22 @@ body {
         display: block;
         margin: auto;
         padding-top: 10px;
+        margin-left: 20%;
     }
 
     .About_me {
-        font-weight: 300;
-        padding-left: 30%;
+        font-weight: 200;
+        margin-left: 25%;
         padding-top: 10px;
+        width: 300px;
     }
-    .section{
-        display: flex;
+
+    .containerr{
+        margin-left: 30%;
+        width: 200px;
     }
+
+
     .content p{
         font-weight: 200;
         padding-left: 30%;
@@ -618,25 +631,26 @@ body {
 
     .resume{
         float: left;
-        margin-left: 30%;
+        margin-left: 0%;
         width: 700px;
     }
 
     .resume img{
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 600px;
     }
 
     .resume_button{
-        width: 400px;
-        height: 50px;
+        width: 500px;
+        height: 70px;
+        margin-bottom: 120px;
     }
 
 
     .wrapper {
         display: flex;
         width: 798px;
-        margin-left: 1%;
+        margin-left: 15%;
     }
 
     .wrapper .card{
@@ -648,7 +662,7 @@ body {
     }
 
     .containerrr {
-        margin-left: 10%;
+        margin-left: 16%;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -662,6 +676,55 @@ body {
     .imgBx img{
         width: 600px;
     }
+
+
+    .contentt{
+        background: blue;
+        width: 500px;
+    }
+    .imgBx img{
+        width: 500px;
+        height: 300px
+    }
+
+    .containerrr .cardd{
+        margin-left:  15%;
+    }
+
+    .contentt h2{
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 40%;
+    }
+    .contentt p{
+        font-size: 15px;
+    }
+
+
+    .contenttt{
+        margin-left: -20px;
+    }
+    .cont .contactinfo .boox .icon{
+        min-width: 60px;
+        height: 60px;
+    }
+    .cont .contactinfo .boox .teext{
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .cont .contactinfo .boox .teext h3{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .contactForm{
+        width: 50%;
+        padding: 25px;
+        margin-left: 30px;
+    }
+
+
+
+
 
     .containerrr .cardd:nth-child(even)
     {
