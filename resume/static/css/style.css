@@ -675,7 +675,10 @@ body {
         margin-right: 50px;
 
     }
+    .cont .contactinfo .boox .teext{
+        color: white;
 
+    }
     .containerrr {
         margin-left: 7%;
         width: 80%;
@@ -694,7 +697,7 @@ body {
     }
 
     .containerrr .cardd{
-        margin-left:  5%;
+        margin-left:  10%;
     }
 
     .contentt h2{
