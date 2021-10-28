@@ -345,6 +345,81 @@ body {
 .contentt{
     background: blue
 }
+
+.contentt h2{
+    font-weight: 600;
+}
+
+
+
+.technologies{
+    background: white;
+    text-decoration: none;
+
+}
+.git{
+    background: grey;
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.technologies h3{
+    color: black;
+    margin-left: 18%;
+    text-decoration: none;
+}
+.remove_underline{
+    color: black;
+    text-decoration: none;
+}
+
+.live{
+    background: grey;
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 5px;
+}
+.git h3{
+    text-decoration: none;
+}
+
+.live h3{
+    margin-left: 30%
+}
+
+#icon_gg{
+    font-size: 100%;
+    border-radius: 100%;
+    color: black;
+    text-decoration: none;
+}
+#icon_ll{
+    font-size: 100%;
+    border-radius: 100%;
+    color: red
+}
+
+
+.programs {
+
+  background-color: white;
+  color: black;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.programs li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+
 .imgBx img{
     width: 600px;
     height: 300px
@@ -633,6 +708,7 @@ body {
         float: left;
         margin-left: 0%;
         width: 700px;
+
     }
 
     .resume img{
@@ -691,6 +767,15 @@ body {
         background: blue;
         width: 700px;
     }
+
+    .technologies {
+    width: 700px;
+    }
+
+    .programs {
+        width: 700px;
+    }
+
     .imgBx img{
         width: 700px;
         height: 400px
@@ -931,6 +1016,15 @@ body {
         background: blue;
         width: 500px;
     }
+
+    .technologies {
+        width: 500px;
+    }
+    .programs{
+        width: 500px;
+    }
+
+
     .imgBx img{
         width: 500px;
         height: 300px
@@ -1123,6 +1217,27 @@ body {
         background: blue;
         width: 300px;
     }
+
+    .technologies {
+        width: 300px;
+    }
+
+    .technologies h3{
+        font-size: 11px;
+    }
+    .programs {
+        width: 300px;
+    }
+
+    .programs li{
+        font-size: 11px;
+    }
+
+    #program {
+        width: 20%;
+    }
+
+
     .imgBx img{
         width: 300px;
         height: 150px
@@ -1236,6 +1351,28 @@ body {
         background: blue;
         width: 200px;
     }
+
+    .technologies {
+        width: 200px;
+    }
+
+    .technologies h3{
+        font-size: 11px;
+    }
+    .programs {
+        width: 200px;
+    }
+
+    .programs li{
+        font-size: 11px;
+    }
+
+    #program {
+        width: 20%;
+    }
+
+
+
     .imgBx img{
         width: 200px;
         height: 150px
