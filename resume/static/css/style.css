@@ -482,7 +482,7 @@ body {
 }
 .read-more-btn{
     padding: 10px 40px;
-    background-color: white;
+    background-color: yellow;
     color: rgb(53, 49, 49);
     border: none;
     outline: none;
@@ -494,6 +494,25 @@ body {
 .text1.show-more .moreText{
     display: inline;
 }
+
+.moreText2{
+    display: none;
+}
+.read-more-btn2{
+    padding: 10px 40px;
+    background-color: yellow;
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.text2.show-more .moreText2{
+    display: inline;
+}
+
                                        /*Contact Page*/
 .contact{
     position: relative;
@@ -795,6 +814,10 @@ body {
         font-size: 20px;
     }
     .read-more-btn{
+        font-size: 20px;
+    }
+
+    .read-more-btn2{
         font-size: 20px;
     }
 
