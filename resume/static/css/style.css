@@ -3,6 +3,7 @@ body {
     padding: 0;
     background: black;
     font-family: 'Raleway', sans-serif;
+    font-size: 80%;
     color: #fff
 }
 
@@ -14,15 +15,14 @@ body {
 .page {
     height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: left;
+}
+
+.bg_image {
+    background-size: 100%;
     background-image: url(/static/images/4.jpg);
     background-repeat: no-repeat;
 }
 
-.page .navbar {
-    margin-top: 1%
-}
 .bar {
     position: fixed;
     z-index:1;
@@ -30,22 +30,18 @@ body {
 }
 
 .navbar{
+    margin-top: 1%;
+    font-weight: 700;
     margin-bottom: 20px;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 20%;
 }
 
 .active{
     color: black
-    margin-right: 350px;
 }
 
-.page .nav li a{
-    color: #rrr;
-    font-size: 1.2em;
-    font-weight: 700;
-}
 
 .navbar li .active{
     color: black;
@@ -56,37 +52,33 @@ body {
     color: black;
 }
 
-.b{
-    margin-left: 750px;
-}
-
 .image-container {
-  position: sticky;
-  z-index: 000;
-  margin-left: 620px;
-  margin-top: 200px;
-  margin-right: auto;
+  margin-left: 38%;
+  margin-top: 15%;
   width: 50%;
   border-radius: 50%;
 }
 
 .pic {
-    width: 250px;
+    width: 38%;
     clip-path: circle();
 
 }
 
 .des-box {
     background-color: white;
-    width: 320px;
-    margin-left: 600px;
-    margin-right: 600px;
-    margin-top: 5px;
+    width: 40%;
+    height: 5%;
+    margin-left: 28%;
+    margin-right: 40%;
+    margin-top: 15px;
+
 }
 
 .describe {
     margin-left: 30px;
-    font-size: 22px;
+    margin-top: 1.5%;
+    font-size: 150%;
     font-weight: 700;
     color: blue;
     text-align: center;
@@ -100,15 +92,16 @@ body {
 }
 
 .title {
-    padding-top: 80px;
+    width: 20%;
+    padding-top: 200px;
     color: blue;
-    font-size: 51px;
+    font-size: 320%;
     font-weight: 700;
-    margin-left: 700px;
+    margin-left: 45%;
 }
 
 .divider {
-    width: 1500px;
+    width: 100%;
     height: 3px;
     background-color: blue;
     display: inline-block;
@@ -118,26 +111,25 @@ body {
 /*About Page*/
 .section{
     width: 100%;
-    min-height: 100vh;
     background-color: black;
     margin-bottom: 100px;
 }
 .container{
-    width: 100%;
-    display: block;
-    margin: auto;
+    width: 200%;
 }
 
 .About_me{
+    width: 180%;
     font-weight: 600;
-    padding-left: 350px;
+    padding-left: 70%;
     padding-top: -100px;
 }
 
 .content p{
-    font-weight: 700;
-    font-size: 14px;
-    padding-left: 100px;
+    width: 150%;
+    font-weight: 300;
+    font-size: 120%;
+    padding-left: 20%;
 }
 
 .content-section{
@@ -147,22 +139,22 @@ body {
 
 .resume{
     float: right;
-    width: 40%;
+    width: 100%;
     padding-top: 200px;
+    padding-left: 25%;
 
 }
 
 .resume img{
-    width: 70%;
-    height: 400px;
+    width: 60%;
+    height: 35%;
     border: 5px solid blue;
     border-radius: 8px
 }
 
 .resume_button{
-    float: left;
-    width: 70%;
-    height: 50px;
+    width: 60%;
+    height: 15%;
     background-color: red;
     border-radius: 8px;
 }
@@ -175,7 +167,7 @@ body {
     color: white;
     text-align: center;
     padding-top: 5px;
-    font-size: 25px;
+    font-size: 120%;
     font-weight: 600;
 }
 
@@ -187,17 +179,14 @@ body {
                                                 /*Skills Page*/
 
 .dividerr {
-    width: 800px;
+    width: 60%;
     height: 3px;
     background-color: black;
     display: inline-block;
     margin-bottom: 50px;
 }
 
-.leftside, .rightside{
-    width: 100%;
-    background: black;
-}
+
 
 .subtitle{
     text-align: center;
@@ -206,7 +195,7 @@ body {
 
 .container
 {
-    width: 600px;
+    width: 100%;
     padding-top: 150px;
 }
 
@@ -226,7 +215,6 @@ body {
 }
 
 .container .skills:before {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -236,8 +224,6 @@ body {
 }
 
 .container .skills .name{
-    position: relative;
-    width: 130px;
     text-align: center;
     color: white;
     margin-top: -2px;
@@ -252,14 +238,14 @@ body {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding-top: 100px;
 }
 
 .wrapper .card{
-    width: 49.5%;
+    width: 100%;
     background: red;
     height: 300px;
     border-radius: 5px;
@@ -319,14 +305,8 @@ body {
 }
 
 
-.features-grid-container{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 6rem;
-}
-
 .contentt{
+    width: 80%;
     background: blue
 }
 
@@ -341,17 +321,24 @@ body {
 }
 
 .technologiess{
+    width: 80%;
     background: white;
     text-decoration: none;
 
 }
 .git{
     background: grey;
-    margin-left: 35%;
-    width: 30%;
+    margin-left: 40%;
+    width: 20%;
     border-radius: 5px;
     text-decoration: none;
 }
+
+.git h3{
+    font-size: 150%;
+    text-decoration: none;
+}
+
 .technologies h3{
     color: black;
     margin-left: 18%;
@@ -359,7 +346,7 @@ body {
 }
 .technologiess h3{
     color: black;
-    margin-left: 18%;
+    margin-left: 30%;
     text-decoration: none;
 }
 .remove_underline{
@@ -369,16 +356,15 @@ body {
 
 .live{
     background: grey;
-    margin-left: 35%;
-    width: 30%;
+    margin-left: 40%;
+    width: 20%;
     border-radius: 5px;
-}
-.git h3{
     text-decoration: none;
 }
 
 .live h3{
-    margin-left: 30%
+    font-size: 150%;
+    text-decoration: none;
 }
 
 #icon_gg{
@@ -398,46 +384,59 @@ body {
 
   background-color: white;
   color: black;
-  width: 100%;
   list-style-type: none;
   text-align: center;
-  padding: 0;
-  margin: 0;
+  font-size: 70%;
 }
-.programss {
 
+.programss {
   background-color: white;
   color: black;
-  width: 100%;
   list-style-type: none;
   text-align: center;
-  padding: 0;
-  margin: 0;
+  font-size: 70%;
 }
+
+.programs img{
+    width: 27%;
+}
+
+.programss img{
+    width: 25%;
+}
+.programs program_img{
+    font-size: 50%;
+}
+
+
 .programs li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 170%;
+  padding: 20px;
+}
+
+.programss li {
+  display: inline-block;
+  font-size: 170%;
   padding: 20px;
 }
 
 
 
 .imgBx img{
-    width: 600px;
-    height: 300px
+    width: 80%;
+    height: 40%
 }
+
 .containerrr{
-    margin-left: 140px;
-    position: relative;
-    width: 1200px;
-    display: flex;
+    margin-left: 10%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 }
 
 .containerrr .cardd{
-    position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 2%;
     background: black;
     border: 4px solid black;
     border-radius: 5%;
@@ -448,32 +447,9 @@ body {
     flex-direction: column-reverse;
 }
 
-.containerr .cardd .imgBx
-{
-    position: relative;
-    width: 250px;
-    height: 250px;
-    background: #000;
-}
-.containerr .cardd .imgBx img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.containerr .cardd .contentt
-{
-    position: relative;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 .message{
     background-color: yellow;
@@ -557,7 +533,7 @@ body {
 .cont .contactinfo .boox .teext{
     display: flex;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 100%;
     color: blue;
     flex-direction: column;
     font-weight: 300;
@@ -565,19 +541,29 @@ body {
 }
 .cont .contactinfo .boox .teext h3{
     font-weight: 500;
+    font-size: 200%;
     color: cyan;
     font-family: Arial, Helvetica, sans-serif;
 }
 .contactForm{
-    width: 40%;
+    width: 45%;
     padding: 40px;
     background: cyan;
 }
 .contactForm h2{
-    font-size: 30px;
+    font-size: 200%;
     color: #333;
     font-weight: 300
 }
+
+.row .f{
+    font-size: 100%;
+}
+
+.row .c{
+    font-size: 100%;
+}
+
 #button{
     border: 5px solid blue;
     background-color: blue;
@@ -657,739 +643,88 @@ body {
 }
 
 
-@media screen and (max-width: 1480px) {
-    .page {
-        background-size: 100%;
-    }
-
-    .navbar{
-        width: 80%;
-        height: 60px;
-    }
-
-    .b{
-        margin-left: 10px
-    }
-
-    .navbar ul{
-        margin-left: 15%;
-    }
-
-    .image-container {
-      margin-left: 35%;
-    }
-    .pic {
-        width: 50%;
-    }
-    .describe {
-        margin-left: 10px;
-        font-size: 30px;
-    }
-
-    .des-box {
-        margin-left: 32%;
-        width: 35%;
-    }
-
-    .title {
-        margin-left: 45%;
-
-    }
-    .divider {
-        width: 100%;
-        padding-left: 20px;
-    }
-
-    .container{
-        width: 70%;
-        margin-left: 1%;
-    }
-
-
-    .About_me {
-        font-weight: 200;
-        margin-left: 30%;
-        padding-top: 10px;
-    }
-
-    .containerr{
-        width: 85%;
-    }
-
-    .content p{
-        width: 190%;
-        font-weight: 200;
-        margin-left: 15%;
-    }
-
-    .resume{
-        margin-right: 15%;
-    }
-
-    .resume img{
-        width: 120%;
-        height: 120%;
-    }
-
-    .resume_button{
-        width: 120%;
-        height: 120%;
-        margin-bottom: 120px;
-    }
-
-
-
-
-
-
-    .container .skills {
-        width: 220%
-    }
-
-    .container .skills .name {
-        position: flex;
-        color: white;
-        width: 80%;
-        font-size: 12px;
-    }
-
-    .card .text{
-        color: white;
-    }
-
-    .leftside .subtitle{
-        position: flex;
-        padding-left: 10%;
-    }
-    .rightside .subtitle{
-        position: flex;
-        padding-left: 30%;
-    }
-
-    .rightside {
-        width: 80%;
-        padding-left: 20%
-    }
-    .wrapper {
-        display: flex;
-        width: 798px;
-        margin-left: 10%;
-    }
-
-    .wrapper .card{
-        width: 34%;
-        height: 250px;
-        margin-left: 180px;
-
-    }
-    .cont .contactinfo .boox .teext{
-        color: white;
-
-    }
-    .containerrr {
-        margin-left: -2%;
-        width: 80%;
-        flex-direction: column;
-    }
-
-
-    .contentt{
-        background: blue;
-        width: 700px;
-    }
-
-    .technologies {
-        width: 700px;
-    }
-
-    .programs {
-        width: 700px;
-    }
-    .technologiess {
-        width: 700px;
-    }
-
-    .programss {
-        width: 700px;
-    }
-    .imgBx img{
-        width: 700px;
-        height: 400px
-    }
-
-    .containerrr .cardd{
-        margin-left:  20%;
-    }
-
-    .contentt h2{
-        font-size: 40px;
-        font-weight: 600;
-        margin-left: 33%;
-
-    }
-    .contentt p{
-        font-size: 20px;
-    }
-    .read-more-btn{
-        font-size: 20px;
-    }
-
-    .read-more-btn2{
-        font-size: 20px;
-    }
-
-    .contenttt{
-        margin-left: 0%;
-        width: 120%
-    }
-    .cont .contactinfo .boox .icon{
-        min-width: 60px;
-        height: 60px;
-    }
-    .cont .contactinfo .boox .teext{
-        margin-left: 20px;
-        font-size: 25px;
-    }
-    .cont .contactinfo .boox .teext h3{
-        font-weight: 500;
-        font-size: 25px;
-    }
-    .contactForm{
-        width: 70%;
-        height: 60%;
-        margin-left: 30px;
-
-    }
-    .contactForm h2{
-        font-size: 35px;
-    }
-    .row .f {
-        font-size: 25px;
-    }
-    .row .c {
-        font-size: 25px;
-        height: 180px;
-    }
-    .btn{
-        font-size: 25px;
-        padding-bottom: 40px;
-        color: white
-    }
-    .social{
-        height: 100px;
-        margin-top: 20px;
-    }
-    #icon_l{
-        font-size: 500%;
-    }
-    #icon_l:hover{
-        font-size: 500%;
-    }
-    #icon_g{
-        font-size: 500%;
-    }
-    #icon_g:hover{
-        font-size: 500%;
-    }
-    #icon_f{
-        font-size: 500%;
-    }
-    #icon_f:hover{
-        font-size: 500%;
-    }
-    #icon_i{
-        font-size: 500%;
-    }
-    #icon_i:hover{
-        font-size: 500%;;
-    }
-
-    .containerrr .cardd:nth-child(even)
-    {
-        flex-direction: column;
-    }
-
+@media screen and (max-width: 770px) {
+.bar {
+    width: 100%
+}
+.navbar{
+    font-size: 90%;
+    background-color: red;
+    margin-left: 10%;
 }
 
-/*tablets*/
-@media screen and (max-width: 990px){
+.image-container {
+  margin-top: 30%;
+}
 
-    .leftside{
-        width: 40%;
-    }
-    .subtitle{
-        margin-left: 100%
-    }
-
-    .container .skills{
-        width: 120%;
-        margin-left: 120%
-    }
-    .rightside{
-        position: flex;
-        margin-left: -15%
-    }
-    .rightside .subtitle{
-        margin-top: 20%;
-        margin-left: 18%
-    }
-    .containerrr{
-        width: 45%
-    }
-
+.describe {
+    font-size: 70%;
 }
 
 
-@media screen and (max-width: 800px){
-
-    .page {
-        background-size: 90%;
-    }
-
-    .navbar{
-        margin-bottom: 20px;
-        margin-left: 10px;
-        padding-left: 1px;
-        width: 550px;
-    }
-
-
-    .page .nav li a{
-        color: #rrr;
-        font-size: 90%;
-        font-weight: 700;
-    }
-
-
-    .b{
-        margin-left: 1px;
-    }
-
-    .title {
-        margin-left: 45%;
-        font-size: 50px;
-    }
-
-
-   .About_me {
-        font-weight: 200;
-        margin-left: -30%;
-        padding-top: 10px;
-    }
-
-    .containerr{
-        width: 100%;
-    }
-
-    .content p{
-        width: 160%;
-        font-weight: 200;
-        margin-left: 2%;
-    }
-
-    .resume{
-        margin-right: 30%;
-    }
-
-    .resume img{
-        width: 120%;
-        height: 120%;
-    }
-
-    .resume_button{
-        width: 120%;
-        height: 120%;
-        margin-bottom: 120px;
-    }
-
-
-    .leftside{
-        width: 80%;
-    }
-    .subtitle{
-        margin-left: 2%
-    }
-
-    .container .skills{
-        width: 120%;
-        margin-left: 18%
-    }
-    .rightside{
-        margin-right: 12%
-    }
-    .rightside .subtitle{
-        margin-top: 20%;
-        margin-left: 8%;
-    }
-
-
-
-
-    .features-grid-container{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 6rem;
+.title {
+    font-size: 180%;
+    margin-left: 38%;
 }
 
-    .contentt{
-        background: blue;
-        width: 500px;
-    }
-
-    .technologies {
-        width: 500px;
-    }
-    .programs{
-        width: 500px;
-    }
-    .technologies {
-        width: 500px;
-    }
-    .programs{
-        width: 500px;
-    }
-
-
-    .imgBx img{
-        width: 500px;
-        height: 300px
-    }
-
-    .containerrr .cardd{
-        margin-left:  0%;
-    }
-
-    .contentt h2{
-        font-size: 20px;
-        font-weight: 600;
-        margin-left: 40%;
-    }
-    .contentt p{
-        font-size: 15px;
-    }
-
-
-    .contenttt{
-        margin-left: -20px;
-    }
-    .cont .contactinfo .boox .icon{
-        min-width: 60px;
-        height: 60px;
-    }
-    .cont .contactinfo .boox .teext{
-        margin-left: 10px;
-        font-size: 15px;
-    }
-    .cont .contactinfo .boox .teext h3{
-        font-weight: 500;
-        font-size: 15px;
-    }
-    .contactForm{
-        width: 50%;
-        padding: 25px;
-        margin-left: 30px;
-    }
-
-    .row .f {
-        font-size: 15px;
-        width: 100%;
-    }
-    .row .c {
-        font-size: 15px;
-        width: 100%;
-        height: 100px
-    }
-    .contactForm h2{
-        font-size: 15px;
-        font-weight: 400
-    }
-    #button{
-        width: 80px;
-        height: 45px;
-        font-size: 15px;
-    }
-
-
+.About_me{
+    font-size: 120%;
 }
 
+.content p{
+    font-size: 80%;
+    padding-left: 20%;
+}
 
-/*mobile phones*/
+.subtitle{
+    font-size: 150%;
+}
 
-@media screen and (max-width: 800px){
+.container .skills .name{
+    margin-left: 10%;
+}
+.card .text{
+    font-size: 100%;
+    color: white;
+}
+.card .circle .boxx span{
+    font-size: 150%;
+}
 
-    .navbar{
-        margin-bottom: 20px;
-        margin-left: 20px;
-        height: 80px;
-        width: 420px;
-        text-align: center
+.git{
+    width: 30%;
+}
+.live{
+   width: 30%;
+}
 
-    }
-    .nav {
-        width: 750px;
-        margin-left: 150px;
-        height: 50px;
-        font-size: 32px;
-    }
-    .active{
-        height: 50px;
-        width: 70px;
+.contentt h2{
+    font-size: 120%;
+}
+.cont .contactinfo .boox .teext h3{
+    font-size: 120%;
+}
+.cont .contactinfo .boox .teext p{
+    font-size: 80%;
+}
+.cont .contactinfo .boox .icon{
+    min-width: 40px;
+    height: 40px;
+    font-size: 15px;
+}
+.contactForm h2{
+    font-size: 120%;
+}
+.row .f{
+    font-size: 70%;
+}
 
-    }
-    .page .nav li{
-        width: 71px;
-        margin-left: -2px;
-
-    }
-    .page .nav li a{
-        color: #rrr;
-        font-size: 40%;
-        font-weight: 700;
-        margin-left: -20px;
-    }
-
-
-    .b{
-        margin-left: 1px;
-    }
-
-
-    .row {
-        width: 80%
-    }
-
-    .image-container {
-      margin-left: 40%;
-      width: 25%;
-    }
-
-    .pic {
-        width: 100%;
-    }
-
-    .des-box {
-        margin-left: 38%;
-        width: 30%;
-    }
-
-
-    .describe {
-        margin-left: 10px;
-        font-size: 100%;
-    }
-
-    .title{
-        margin-left: 30%;
-        font-size: 200%;
-    }
-
-    .divider {
-        width: 80%
-    }
-
-    .section {
-        width: 80%
-    }
-
-    .About_me {
-        margin-left: -50%;
-        font-size: 150%;
-    }
-
-    .content p{
-        margin-left: -8%;
-        font-size: 80%;
-    }
-
-    .resume {
-        margin-right: 55%;
-    }
-    .resume img{
-        width: 200%;
-        height: 200%;
-    }
-    .resume_button{
-        width: 200%;
-        height: 200%;
-        font-size: 80%;
-    }
-    .resume_button h4{
-        font-size: 120%;
-    }
-
-    .subtitle{
-        margin-left: -30%;
-        font-size: 150%;
-    }
-    .leftside{
-        width: 100%
-    }
-    .container{
-        width: 60%
-    }
-
-
-
-
-    .wrapper .card{
-        width: 60%;
-        height: 200px;
-        margin-left: -5%;
-    }
-
-    .card .circle .boxx span{
-        font-size: 30px;
-    }
-
-    .card .text{
-        font-size: 15px;
-    }
-    .features-grid-container{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 6rem;
-    }
-
-    .contentt{
-        width: 200%;
-    }
-
-    .technologies{
-        width: 100%
-    }
-
-    .technologiess{
-        width: 200%
-    }
-
-    .technologies h3{
-        font-size: 11px;
-    }
-
-    .programs{
-        width: 100%
-    }
-    .programss{
-        width: 100%
-    }
-    .programs li{
-        font-size: 11px;
-    }
-    .programss li{
-        font-size: 11px;
-    }
-    .git h3{
-        margin-left: 30%;
-        font-size: 11px;
-    }
-    #icon_gg{
-        font-size: 11px;
-    }
-    #programm {
-        width: 5%;
-    }
-    #program {
-        width: 10%;
-    }
-    .read-more-btn{
-        font-size: 10px
-    }
-    .read-more-btn2{
-        font-size: 10px
-    }
-    .imgBx img{
-        width: 200%;
-        height: 100%
-    }
-
-    .containerrr .cardd{
-        margin-left:  15%;
-    }
-
-    .contentt h2{
-        font-size: 10px;
-        font-weight: 600;
-        margin-left: 40%;
-    }
-    .contentt p{
-        font-size: 8px;
-    }
-
-
-    .contenttt{
-        margin-left: -20px;
-    }
-    .cont .contactinfo .boox .icon{
-        min-width: 40px;
-        height: 40px;
-    }
-    .cont .contactinfo .boox .teext{
-        margin-left: 20px;
-        font-size: 8px;
-    }
-    .cont .contactinfo .boox .teext h3{
-        font-weight: 500;
-        font-size: 10px;
-    }
-    .contactForm{
-        width: 50%;
-        padding: 25px;
-        margin-left: 30px;
-    }
-    .row .f {
-        font-size: 8px;
-        width: 150px;
-    }
-    .row .c {
-        font-size: 8px;
-        width: 150px;
-        height: 100px
-    }
-    .contactForm h2{
-        font-size: 10px;
-        font-weight: 400
-    }
-    #button{
-        width: 60px;
-        height: 30px;
-        font-size: 12px;
-        height: 40px;
-    }
-
-    .row .f {
-        width: 100%;
-    }
-    .row .c {
-        width: 100%;
-        height: 100px
-    }
-
-
-    #icon_l{
-        font-size: 300%;
-    }
-    #icon_l:hover{
-        font-size: 300%;
-    }
-    #icon_g{
-        font-size: 300%;
-    }
-    #icon_g:hover{
-        font-size: 300%;
-    }
-    #icon_f{
-        font-size: 300%;
-    }
-    #icon_f:hover{
-        font-size: 300%;
-    }
-    #icon_i{
-        font-size: 300%;
-    }
-    #icon_i:hover{
-        font-size: 300%;;
-    }
+.row .c{
+    font-size: 70%;
+}
+#button{
+    font-size: 100%;
+    height: 40px;
+}
 
 }
