@@ -5,14 +5,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewreport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{% static "images/1.jpg" %}">
+    <link rel="shortcut icon" href="{% static 'images/1.jpg' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
     <script src="https://kit.fontawesome.com/2c00a94765.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    <script src="{% static "js/nav.js" %}" type="text/javascript"></script>
+    <script src="{% static 'js/nav.js' %}" type="text/javascript"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,18 +25,15 @@
         <p>We received your email and will respond shortly...</p>
    </center>
 {% else %}
-    <div id='home' class="container-fluid page ">`
+    <div id='home' class="container-fluid page ">
         <div class="row">
         <div class="bg_image">
             <div class="col-md-12 bar">
                 <nav class="navbar">
+                    <a class="nav-link" href="#home"><i class="fa fa-home"></i>Home</a>
                     <ul class="nav" id="navbar">
                         <li>
-                            <a class="nav-link active" href="#home"><i class="fa fa-home"></i>Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link b" href="#about">About</a>
-                        </li>
+                            <a class="nav-link" href="#about">About</a>
                         <li>
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
@@ -49,16 +48,14 @@
 
                 </div>
                     <div class="image-container"><img src="{% static "images/1.jpg" %}" class='pic'></div>
-                    <div class="des-box">
-                        <div class="describe">Python/Web Developer</div>
+
+                    <div class="box">
+                        <ul>
+                            <li class="des-box">Python/Web Developer</li>
+                            <li class="des-box">Stefan Orlic</li>
+                            <li class="des-box">Indjija, Serbia</li>
+                        </ul>
                     </div>
-                    <div class="des-box">
-                        <div class="describe">Stefan Orlic</div>
-                    </div>
-                    <div class="des-box">
-                        <div class="describe">Indjija, Serbia</div>
-                    </div>
-    </div>
     </div>
  {% endif %}
                                              <!--About Page-->
@@ -104,36 +101,38 @@
         <div class="leftside">
             <h2 class="subtitle">Technical Skills</h2>
             <div class="container">
-                <div class="skills">
+                <ul>
+                <li class="skills">
                     <span class="name">Python</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">OOP</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">MVC</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">Django/Flask</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">HTML5/CSS</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">JSON/jQuery/AJAX</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">JavaScript</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">SQLite/SQLS/MySQL</span>
-                </div>
-                <div class="skills">
+                </li>
+                <li class="skills">
                     <span class="name">ORM</span>
-                </div>
-                 <div class="skills">
+                </li>
+                 <li class="skills">
                     <span class="name">Git/GitHub</span>
-                </div>
+                </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -178,76 +177,87 @@
                                             <!--Project Page-->
 <h1 class="title" id="projects">Projects</h1>
 <span class="divider"></span>
-<div class="containerrr">
-    <div class="cardd">
-        <div class="imgBx">
-            <img src="{% static "images/project2.gif" %}" >
-        </div>
+  <section class="colored-section" id="testimonials">
 
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
 
-        <div class="technologiess">
+        <!-- first item -->
+          <div class="carousel-item active container-fluid">
+              <h1 class="upwork">Upwork</h1>
+              <h2 class="upwork">American Recovery Trust Corp</h2>
+              <h5 class="link_h5"><a href="https://www.alibaba.com/" target="_blank" class="site_link">www.alibaba.com</a></h5>
+          <h2 class="site_name">Alibaba Scraping</h2>
+
+               <p class="text1">
+This is web automation for scraping certain data from Alibaba web site. Python program language, Selenium and Pandas packages are used for making it work.
+                   <br><br>The program works in a following way – there is an option to add an item name (key word) in the search bar, the new web window is opened and the products related to the word typed in the search bar are searched for.
+                   <br><br>Each item is opened in the new tab automatically and particular data from the item is scraped. In this project the condition was that the product’s company is established before 2005.
+                   <br><br>When it reaches 15 companies it is automatically stopped and all the data is saved in an Excel Sheet using Pandas packages.
+
+                </p>
+            <img src="{% static 'images/alibaba_scraping.gif' %}" >
             <div class="git">
-            <a href="https://github.com/StefanPro119/Project2" target="_blank" class="remove_underline">
+            <a href="https://github.com/StefanPro119/Alibaba-Scraping" target="_blank" class="remove_underline">
                <h3><i class="fab fa-github" id="icon_gg"></i>GitHub</h3></a>
             </div>
-
-
-
-            <div class="programss">
-                    <li><img src="https://img.icons8.com/color/48/000000/python--v1.png" id="programm">Python</li>
-                    <li><img src="https://img.icons8.com/windows/32/000000/django.png" id="programm">Django</li>
-                    <li><img src="https://img.icons8.com/color/48/000000/html-5.png" id="programm">Html/Css<img src="https://img.icons8.com/color/48/000000/css3.png" id="programm"></li>
-                    <li><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-database-data-science-kiranshastry-lineal-color-kiranshastry.png" id="program">SQLite</li>
+            <div class="upwork_platform">
+                <a href="https://www.upwork.com/nx/wm/workroom/30809446/overview" target="_blank" class="remove_underline">
+                    <h5><iconify-icon icon="simple-icons:upwork" id="icon_up" ></iconify-icon>Upwork</h5></a>
             </div>
+
+        <div class="programs">
+                <li><img src="https://img.icons8.com/color/48/000000/python--v1.png" id="program">Python</li>
+                <li><img src="https://img.icons8.com/stickers/100/000000/selenium-test-automation.png" id="program">Selenium</li>
+                <li><img src="https://img.icons8.com/color/48/000000/pandas.png" id="program">Pandas</li>
         </div>
-        <div class="contentt">
-            <div>
-                <h2>E-commerce site</h2>
-                <p class="text1">
-                The project created is a web site for e-commerce.
-                Clients can register with their username and password in order to be able to take part in bidding. <br> <br>
-                When the profile is created, the client can see which listings are active (Active listings menu), that is, the articles that has not been sold yet.
-                Besides, other menus on the client’s homepage are Log Out, Create, Category and Watchlist menu. <br> <br> <span class="moreText">
-                On the Active listings page, there are listings that are available to be sold. Every item has More info button; when clicking it, detailed info about the product appears.
-                It includes a product description, starting price, current bid (if already bided), who the product is created by and date and time of auction creation.
-                Also, there is an option to add the item to the client’s Watchlist, or to remove it.
-                A client can simply do this by clicking on the Add to/Remove from Watchlist button.
-                Consequently, it will be available to be seen in or removed from the Watchlist menu. <br> <br>
-                On the product page, client can make a bid by introducing the price in the Bid value blank space.
-                By clicking on the Make a bid button, the info on the page is updated and it shows the current bid that the client has introduced; the notification Your bid is actual appears.
-                There is also an option to leave a comment about the product bellow the product image. <br> <br>
-                Afterwards, if the price introduced suits the seller, the auction can be closed, and in the clients profile appears the notification It has been sold to you. <br> <br>
-                When clicking on the Create button, client has an option to create auction. The page Create your product appears and the client should introduce Title, Subtitle, Category, Starting price and Image.
-                That way, the client is the seller of the item.</span>
+
+        </div>
+
+
+          <!-- second item -->
+
+          <div class="carousel-item container-fluid">
+              <h1 class="upwork">Upwork</h1>
+              <h2 class="upwork">American Recovery Trust Corp</h2>
+              <h5 class="link_h5"><a href="https://www.houseplans.net/" target="_blank" class="site_link">www.houseplans.net</a></h5>
+              <h2 class="site_name">House Plan Scraping</h2>
+               <p class="text1">
+                   This is web automation for scraping certain data from House Plans web site. Python program language, Selenium and Pandas and docx packages are used for making it work.
+                   <br><br>The program works in a following way – there is an option to introduce a house plan number into search and the page related to the number will open in new tab. Afterwards all the data related to the particular house plan is collected, including pictures, and it is saved in a Word document using docx packeges.
+
                 </p>
-
-                <button class="read-more-btn">Show More...</button>
+            <br>
+            <img src="{% static 'images/houseplans.gif' %}" >
+            <div class="git">
+            <a href="https://github.com/StefanPro119/House_Plans_Scraping" target="_blank" class="remove_underline">
+               <h3><i class="fab fa-github" id="icon_gg"></i>GitHub</h3></a>
             </div>
+            <div class="upwork_platform">
+                <a href="https://www.upwork.com/ab/proposals/1548853166424223744" target="_blank" class="remove_underline">
+                    <h5><iconify-icon icon="simple-icons:upwork" id="icon_up" ></iconify-icon>Upwork</h5></a>
+            </div>
+
+        <div class="programs">
+                <li><img src="https://img.icons8.com/color/48/000000/python--v1.png" id="program">Python</li>
+                <li><img src="https://img.icons8.com/stickers/100/000000/selenium-test-automation.png" id="program">Selenium</li>
+                <li><img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/000000/external-docx-file-file-extension-fauzidea-flat-fauzidea.png" id="program">Docx</li>
         </div>
-    </div>
 
-
-    <div class="cardd">
-        <div class="imgBx">
-            <img src="{% static "images/humanity.gif" %}" >
         </div>
-
-        <div class="contentt">
-            <div>
-                <h2>Humanity site</h2>
-
-                <p class="text2">
+          <!-- second item -->
+        <div class="carousel-item container-fluid">
+            <h2 class="site_name">Humanity Website</h2>
+          <p class="text2">
                 The target group of this project are users willing to leave the charity on certain location and to make it visible to the ones who need it. <br>
                 <br>There is an option to for new users to register and to log in later when entering the site. <br><span class="moreText2">
                 <br>During the registration process the user should leave the following info: name, last name, mail and image. The next step is to leave the charity. The user introduces detailed info about the charity – description, type of charity (food, clothes, etc.), the image of the place where it is left and the exact address. After doing that, the charity is automatically marked on the Home page on the map. <br>
                 <br>On the Home page there is a comprehensive list of charities created. Every item is available to be seen as a separate link leading to its own page with all the previously introduced detailed info about it. <br>
                 <br>Each charity post is automatically deleted 24 hours after being published.</span>
                 </p>
-
-                <button class="read-more-btn2">Show More...</button>
-            </div>
-
-       <div class="technologies">
+            <button class="read-more-btn2">Show More...</button>
+            <br>
+            <img src="{% static 'images/humanity.gif' %}" >
             <div class="git">
             <a href="https://github.com/StefanPro119/Humanity" target="_blank" class="remove_underline">
                <h3><i class="fab fa-github" id="icon_gg"></i>GitHub</h3></a>
@@ -267,14 +277,55 @@
 
                 <li><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-database-data-science-kiranshastry-lineal-color-kiranshastry.png" id="program">SQLite</li>
         </div>
-        </div>
 
         </div>
 
+          <!-- third item -->
+        <div class="carousel-item container-fluid">
+          <h2 class="site_name">E-commerce Website</h2>
+               <p class="text3">
+                The project created is a web site for e-commerce.
+                Clients can register with their username and password in order to be able to take part in bidding. <br> <br>
+                When the profile is created, the client can see which listings are active (Active listings menu), that is, the articles that has not been sold yet.
+                Besides, other menus on the client’s homepage are Log Out, Create, Category and Watchlist menu. <br> <br> <span class="moreText">
+                On the Active listings page, there are listings that are available to be sold. Every item has More info button; when clicking it, detailed info about the product appears.
+                It includes a product description, starting price, current bid (if already bided), who the product is created by and date and time of auction creation.
+                Also, there is an option to add the item to the client’s Watchlist, or to remove it.
+                A client can simply do this by clicking on the Add to/Remove from Watchlist button.
+                Consequently, it will be available to be seen in or removed from the Watchlist menu. <br> <br>
+                On the product page, client can make a bid by introducing the price in the Bid value blank space.
+                By clicking on the Make a bid button, the info on the page is updated and it shows the current bid that the client has introduced; the notification Your bid is actual appears.
+                There is also an option to leave a comment about the product bellow the product image. <br> <br>
+                Afterwards, if the price introduced suits the seller, the auction can be closed, and in the clients profile appears the notification It has been sold to you. <br> <br>
+                When clicking on the Create button, client has an option to create auction. The page Create your product appears and the client should introduce Title, Subtitle, Category, Starting price and Image.
+                That way, the client is the seller of the item.</span>
+                </p>
+            <button class="read-more-btn">Show More...</button>
+            <br>
+            <img src="{% static 'images/project2.gif' %}" >
+            <div class="git">
+            <a href="https://github.com/StefanPro119/Project2" target="_blank" class="remove_underline">
+               <h3><i class="fab fa-github" id="icon_gg"></i>GitHub</h3></a>
+            </div>
 
 
+        <div class="programs">
+                <li><img src="https://img.icons8.com/color/48/000000/python--v1.png" id="program">Python</li>
+                <li><img src="https://img.icons8.com/windows/32/000000/django.png" id="program">Django</li>
+                <li><img src="https://img.icons8.com/color/48/000000/html-5.png" id="program">Html/Css<img src="https://img.icons8.com/color/48/000000/css3.png" id="program"></li>
+                <li><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-database-data-science-kiranshastry-lineal-color-kiranshastry.png" id="program">SQLite</li>
+        </div>
+
+        </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
-</div>
+
+  </section>
 
                                             <!--Contant Page-->
 <h1 class="title" id="contact">Contact</h1>
@@ -327,12 +378,28 @@
                 </form>
         </div>
     </div>
-    <div class="social">
-        <div><a href="https://www.linkedin.com/in/stefan-orlic-a13457168/" target="_blank"><i class="fab fa-linkedin" id="icon_l"></i></a></div>
-        <div><a href="https://github.com/StefanPro119" target="_blank"><i class="fab fa-github" id="icon_g"></i></a></div>
-        <div><a href="https://www.facebook.com/stefan.orlic.7/" target="_blank"><i class="fab fa-facebook" id="icon_f"></i></a></div>
-        <div><a href="https://www.instagram.com/_zeka_90/" target="_blank"><i class="fab fa-instagram-square" id="icon_i"></i></a></div>
-    </div>
+
+<div class="social">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/stefan-orlic-a13457168/" target="_blank"><i class="fab fa-linkedin" id="icon_l"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/StefanPro119" target="_blank"><i class="fab fa-github" id="icon_g"></i></a>
+      </li>
+    <li class="nav-item">
+        <a href="https://www.upwork.com/freelancers/~01409be0232e4ad8a1" target="_blank"><iconify-icon icon="simple-icons:upwork"  id="icon_u"></iconify-icon></a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/stefan.orlic.7/" target="_blank"><i class="fab fa-facebook" id="icon_f"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/_zeka_90/" target="_blank"><i class="fab fa-instagram-square" id="icon_i"></i></a></div>
+      </li>
+    </ul>
+</div>
+
+
 </section>
 
 
@@ -363,25 +430,12 @@
 
 </script>
 
-<script type="text/javascript">
-    var btnContainer = document.getElementById("navbar");
-    var btns = btnContainer.getElementsByClassName("nav-link");
-
-    for(var i =0; i<btns.length; i++){
-        btns[i].addEventListener('click', function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace("active");
-            this.className += " active";
-        })
-    }
-</script>
-
 <script>
     const readMoreBtn = document.querySelector('.read-more-btn');
-    const text1 = document.querySelector('.text1');
+    const text3 = document.querySelector('.text3');
 
     readMoreBtn.addEventListener('click',(e)=>{
-        text1.classList.toggle('show-more');
+        text3.classList.toggle('show-more');
         if(readMoreBtn.innerText === 'Show More...'){
             readMoreBtn.innerText = 'Show Less';
         }else{
